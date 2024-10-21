@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+.sobre-mim {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-e-descricao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.minha-foto {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.descricao {
+    max-width: 600px;
+}
+
+.descricao h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.descricao h3 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.descricao p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.icons-sociais {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #0077b5; 
+}
+
+.social-icon:nth-child(2):hover {
+    color: #6e5494; /
+}
+
+.social-icon:nth-child(3):hover {
+    color: #7289da; /
+}
+
+.social-icon:nth-child(4):hover {
+    color: #f24e1e; 
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+footer span {
+    font-size: 0.9rem;
+}

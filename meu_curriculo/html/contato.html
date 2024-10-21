@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="shortcut icon" href="/img/icon-cv.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilosCon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Currículo</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/html/index.html"><i class="fas fa-user"></i> Sobre mim</a></li>
+                <li><a href="/html/formacao.html"><i class="fas fa-graduation-cap"></i> Formação</a></li>
+                <li><a href="/html/experiencia.html"><i class="fas fa-briefcase"></i> Experiência</a></li>
+                <li><a href="/html/contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="Forms">
+        <h2>Formulário de Serviço</h2>
+        <form id="serviceForm" enctype="multipart/form-data">
+            <label for="firstName">Nome:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Sobrenome:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(xx) xxxxx-xxxx" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <label for="language">Língua aplicada no serviço:</label>
+            <select id="language" name="language" required>
+                <option value="">Selecione uma língua</option>
+                <option value="Inglês">Inglês</option>
+                <option value="Espanhol">Espanhol</option>
+                <option value="Francês">Francês</option>
+                <option value="Português">Português (pt-br)</option>
+            </select>
+
+            <label for="prototype">Upload de protótipo (PDF, DOC, DOCX, JPEG, PNG):</label>
+            <input type="file" id="prototype" name="prototype" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" required>
+
+
+            <label for="preferredLanguages">Linguagens preferidas:</label>
+            <select id="preferredLanguages" name="preferredLanguages" multiple required>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+                <option value="PHP">PHP</option>
+            </select>
+
+            <label>Tipo de banco de dados recomendado:</label>
+            <input type="radio" id="sql" name="database" value="SQL" required>
+            <label for="sql">SQL</label>
+            <input type="radio" id="nosql" name="database" value="NoSQL">
+            <label for="nosql">NoSQL</label>
+
+            <label for="meetingTime">Turno de preferência para reuniões:</label>
+            <select id="meetingTime" name="meetingTime" required>
+                <option value="">Selecione um turno</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+
+            <label for="meetingHour">Melhor horário sugerido para reuniões:</label>
+            <input type="time" id="meetingHour" name="meetingHour" required>
+
+
+            <label for="deliveryDate">Previsão de entrega desejada:</label>
+            <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <hr>
+    <section class="endereco">
+        <div id="end">
+            <h3>Endereço:</h3>
+            <address>
+                Desenvolvido: <a href="mailto:walisonbrandao@edu.pe.senac.br">Walison Brandão</a>.<br>
+                Visite: <a href="https://github.com/brandaowalison" target="_blank">Meu GitHub</a><br>
+                Olinda, PE - Brasil
+            </address>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright © 2024 Walison Brandão. Todos os Direitos Reservados.</span>
+    </footer>
+</body>
+</html>
